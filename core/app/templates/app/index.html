@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    {%for music in musics %}
+    <a href="http://127.0.0.1:8000/music/{{ music.id }}" target="_blank">Масло Черного Тмина</a>
+    <h3>Жанр:{{music.genre}}</h3>
+
+    {% endfor %}
+     <style>
+
+    body {
+            background-image: url(https://img.gazeta.ru/files3/664/13405664/rosc-pic905-895x505-43588.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: white;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+</center>
+</body>
+</html>
